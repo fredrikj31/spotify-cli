@@ -1,0 +1,39 @@
+{
+  "name": "@fredrikj31/spotify-cli",
+  "version": "1.0.0",
+  "description": "A CLI tool, you can use to control your Spotify, without leaving the terminal.",
+  "main": "./build/cli.js",
+  "bin": {
+    "spotify": "./build/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "node ./build/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredrikj31/spotify-cli.git"
+  },
+  "release": {
+    "branches": [
+      {
+        "name": "main"
+      }
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredrikj31/spotify-cli/issues"
+  },
+  "homepage": "https://github.com/fredrikj31/spotify-cli#readme",
+  "dependencies": {
+    "commander": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
