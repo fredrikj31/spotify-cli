@@ -1,5 +1,11 @@
 #!/usr/bin/env node
 import { Command } from "commander";
+import omelette from "omelette";
+
+import * as completionTree from "./completionTree";
+
+const completion = omelette("spotify").tree(completionTree);
+completion.init();
 
 // CLI
 const program = new Command();
